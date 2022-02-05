@@ -10,6 +10,10 @@ p {
   font-weight: 400;
 }
 
+.close {
+  display: none;
+}
+
 .btn-dark {
   color: black;
   background: white;
@@ -37,6 +41,10 @@ body {
 }
 
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,10 +54,61 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #ffffff;
+  overflow: hidden;
 }
 
 header nav {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  left: 0;
+  top: 94px;
+  height: 235px;
+  width: 100%;
+  background-color: #1d1c1e;
+  z-index: 2;
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+  -webkit-transition: -webkit-transform ease-in-out 200ms;
+  transition: -webkit-transform ease-in-out 200ms;
+  transition: transform ease-in-out 200ms;
+  transition: transform ease-in-out 200ms, -webkit-transform ease-in-out 200ms;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 150px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .hero {
@@ -157,7 +216,20 @@ header nav {
 }
 
 .about-us {
-  margin-bottom: 121px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-us.wrapper {
+  margin-bottom: 0;
 }
 
 .about-us .card {
@@ -172,6 +244,10 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 80px;
+}
+
+.about-us .card:last-child {
+  margin-bottom: 0;
 }
 
 .about-us .card .card-title {
@@ -218,8 +294,22 @@ header nav {
 
 footer {
   position: relative;
-  background: #1d1c1e;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #1d1c1e), color-stop(20%, #ffffff));
+  background: linear-gradient(0deg, #1d1c1e 80%, #ffffff 20%);
   color: white;
+}
+
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .contact-banner {
@@ -227,11 +317,9 @@ footer .contact-banner {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   text-align: center;
   background-color: #e7816b;
-  top: -205px;
-  width: 100%;
+  width: 327px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,6 +332,7 @@ footer .contact-banner {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 15px;
+  margin-bottom: 64px;
 }
 
 footer .footer-nav {
@@ -254,11 +343,19 @@ footer .footer-nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .footer-nav .logo {
-  border-bottom: 2px solid #333136;
-  padding-bottom: 32px;
+  width: 202px;
+  margin-bottom: 32px;
+}
+
+footer .footer-nav hr {
+  color: rgba(255, 255, 255, 0.3);
+  width: 100%;
 }
 
 footer .footer-nav .nav-links ul {
@@ -317,5 +414,6 @@ footer .footer-nav .nav-links ul a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 184px;
 }
 /*# sourceMappingURL=index.css.map */
