@@ -231,7 +231,7 @@ footer .contact-banner {
   text-align: center;
   background-color: #e7816b;
   top: -205px;
-  width: 375px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
