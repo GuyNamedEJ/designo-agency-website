@@ -83,6 +83,7 @@ header nav {
 header nav ul {
   margin: 0;
   padding: 0;
+  padding-left: 24px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
