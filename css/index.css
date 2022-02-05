@@ -235,6 +235,7 @@ footer .contact-banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 379px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
