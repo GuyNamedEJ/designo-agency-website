@@ -1,0 +1,320 @@
+h1 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.btn-dark {
+  color: black;
+  background: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 18px 25px;
+  width: 152px;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 35px 24px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav {
+  display: none;
+}
+
+.hero {
+  text-align: center;
+  position: relative;
+  background: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: #e7816b;
+  height: 843px;
+  overflow: hidden;
+  color: white;
+}
+
+.hero .wrapper {
+  padding-top: 80px;
+}
+
+.hero .hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.hero img {
+  position: relative;
+  bottom: -50px;
+  width: 284px;
+  height: 573px;
+}
+
+.services {
+  color: white;
+  display: -ms-grid;
+  display: grid;
+}
+
+.services .tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+  width: 100%;
+  height: 250px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.services .tile h1 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.services .tile p {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.services .tile img {
+  width: 4px;
+  height: 8px;
+  margin-left: 16px;
+}
+
+.services .img-web-design {
+  background: url("/assets/home/mobile/image-web-design.jpg") no-repeat;
+  background-size: cover;
+}
+
+.services .img-app-design {
+  background: url("/assets/home/mobile/image-app-design.jpg") no-repeat;
+  background-size: cover;
+}
+
+.services .img-graphic-design {
+  background: url("/assets/home/mobile/image-graphic-design.jpg") no-repeat;
+  background-size: cover;
+}
+
+.about-us {
+  margin-bottom: 121px;
+}
+
+.about-us .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+
+.about-us .card .card-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  margin: 16px 0;
+}
+
+.about-us .card .card-content {
+  text-align: center;
+  line-height: 26px;
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+.about-us .card .img-bg {
+  position: absolute;
+  width: 202px;
+  height: 202px;
+}
+
+.about-us .card img {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.about-us .card.passionate .img-bg {
+  background: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+}
+
+.about-us .card.resourceful .img-bg {
+  background: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.about-us .card.friendly .img-bg {
+  background: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+footer {
+  position: relative;
+  background: #1d1c1e;
+  color: white;
+}
+
+footer .contact-banner {
+  background-image: url("/assets/shared/desktop/bg-pattern-call-to-action.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  background-color: #e7816b;
+  top: -205px;
+  width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 15px;
+}
+
+footer .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-nav .logo {
+  border-bottom: 2px solid #333136;
+  padding-bottom: 32px;
+}
+
+footer .footer-nav .nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-nav .nav-links ul li {
+  padding: 25px;
+}
+
+footer .footer-nav .nav-links ul a {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: white;
+}
+
+.address, .contact-us {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #f1f3f5;
+}
+
+.address h1, .contact-us h1 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.address p, .contact-us p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=index.css.map */
