@@ -16,94 +16,108 @@
 
 <body>
 
-  
-    <header class="wrapper">
-      <img src="/assets/logo-dark.svg" alt="Deisgno Logo" class="logo">
+<main class="wrapper">
+
+  <header>
+    <div class="container">
+      <img src="/assets/logo-dark.svg" alt="Designo logo" class="logo">
       <nav>
         <ul>
-          <li><a href="#">Our Company</a></li>
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/about.html">Our Company</a></li>
+          <li><a href="/locations.html">Locations</a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
       </nav>
       <img id = "open" src="/assets/shared/mobile/icon-hamburger.svg" alt="" class="menu">
       <img id = "close" src="/assets/shared/mobile/icon-close.svg" alt="" class="close">
-    </header>
-  
+    </div>
+  </header>
+
   <section class="hero">
-    <div class="wrapper">
+    <div class="container">
+      <div class="hero-img"></div>
       <div class="hero-content">
-        <h1>
-          Award-winning custom designs and digital branding solutions
-        </h1>
-        <p>
-          With over 10 years in the industry, we are experienced in creating fully responsive websites, app design,
-          and engaging brand experiences. Find out more about our services.
-        </p>
-        <a href="#" class="btn-dark">Learn More</a>
-
+        <h1>Award-winning custom designs and digital branding solutions</h1>
+        <p>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, 
+          and engaging brand experiences. Find out more about our services.</p>
+          <a href="#" class="btn-dark">Learn More</a>
       </div>
-
-      <img src="/assets/home/desktop/img-hero-phone.png" alt="image-hero-phone" class="hero-img">
+      <img src="/assets/home/desktop/img-hero-phone.png" alt="">
     </div>
   </section>
 
-  <section class="services wrapper">
-      <a class="tile img-web-design" href="#">
-        <h1>Web Design</h1>
-        <p>View projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt=""></p>
-      </a>
-      
-      <a class="tile img-app-design" href="#">
-        <h1>App Design</h1>
-        <p>View projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt=""></p>
-      </a>
- 
-      <a class="tile img-graphic-design" href="#">
-        <h1>Graphic Design</h1>
-        <p>View projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt=""></p>
-      </a>  
+  <section class="services container">
+        <a href="/web-design.html">
+          <div class="tile img-web-design">
+            <h1>Web Design</h1>
+            <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt=""></p>
+          </div>
+        </a>
+
+        <a href="/app-design.html">
+          <div class="tile img-app-design">
+            <h1>App Design</h1>
+            <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt=""></p>
+          </div>
+        </a>
+
+        <a href="/graphic-design.html">
+          <div class="tile img-graphic-design">
+            <h1>Graphic Design</h1>
+            <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt=""></p>
+          </div>
+        </a>
   </section>
 
-  <section class="about-us wrapper">
+  <section class="about-us container">
     <div class="card passionate">
       <div class="img-bg"></div>
       <img src="/assets/home/desktop/illustration-passionate.svg" alt="Passionate">
-      <p class="card-title">Passionate</p>
-      <p class="card-content">Each project starts with an in-depth brand research to ensure we only create products
-        that serve a purpose. We merge
-        art, design, and technology into exciting new solutions.</p>
+      <div class="card-details">
+        <p class="card-title">Passionate</p>
+        <p class="card-content">Each project starts with an in-depth brand research to ensure we only create products
+          that serve a purpose. We merge
+          art, design, and technology into exciting new solutions.</p>
+      </div>
+      
     </div>
 
     <div class="card resourceful">
       <div class="img-bg"></div>
       <img src="/assets/home/desktop/illustration-resourceful.svg" alt="Passionate">
-      <p class="card-title">Resourceful</p>
-      <p class="card-content">Everything that we do has a strategic purpose. We use an agile approach in all of our
-        projects and value customer
-        collaboration. It guarantees superior results that fulfill our clients’ needs.</p>
+      <div class="card-details">
+        <p class="card-title">Resourceful</p>
+        <p class="card-content">Everything that we do has a strategic purpose. We use an agile approach in all of our
+          projects and value customer
+          collaboration. It guarantees superior results that fulfill our clients’ needs.</p>
+      </div>
+      
     </div>
 
     <div class="card friendly">
       <div class="img-bg"></div>
       <img src="/assets/home/desktop/illustration-friendly.svg" alt="Passionate">
-      <p class="card-title">Friendly</p>
-      <p class="card-content"> We are a group of enthusiastic folks who know how to put people first. Our success
-        depends on our customers, and we
-        strive to give them the best experience a company can provide.
-      </p>
+      <div class="card-details">
+        <p class="card-title">Friendly</p>
+        <p class="card-content"> We are a group of enthusiastic folks who know how to put people first. Our success
+          depends on our customers, and we
+          strive to give them the best experience a company can provide.
+        </p>
+      </div>
+      
     </div>
   </section>
-
+   
+</main>
   <footer>
-    <div class="wrapper">
-      <section class="contact-banner wrapper">
+    <div class="container">
+      <section class="contact-banner">
         <div class="contact-content">
           <h1> Let’s talk about your project</h1>
           <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business
             grow.</p>
         </div>
-        <a href="#" class="btn-dark">Get in touch</a>
+        <a href="/contact.html" class="btn-dark">Get in touch</a>
       </section>
 
       <nav class="footer-nav">
@@ -130,7 +144,7 @@
           <p> P : +1 253-863-8967</p>
           <p> M : contact@designo.co</p>
         </div>
-      </section>
+      
 
       <div class="social-links">
         <div class="icon-fb">
@@ -169,9 +183,60 @@
           </svg>
         </div>
       </div>
+    </section>
     </div>
   </footer>
   <script src="js/menu.js"></script>
+
+ 
+
+  <!-- Our Company
+  Locations
+  Contact
+  
+  Award-winning custom designs and digital branding solutions
+
+  With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, 
+  and engaging brand experiences. Find out more about our services.
+  
+  Learn more
+  
+  Web Design
+  View Projects
+  
+  App Design
+  View Projects
+  
+  Graphic Design
+  View Projects
+  
+  Passionate
+  Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
+  art, design, and technology into exciting new solutions.
+  
+  Resourceful
+  Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer
+  collaboration. It guarantees superior results that fulfill our clients’ needs.
+  
+  Friendly
+  We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we
+  strive to give them the best experience a company can provide.
+  
+  Let’s talk about your project
+  Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.
+  Get in touch
+  
+  Our company
+  Locations
+  Contact
+  
+  Designo Central Office
+  3886 Wellington Street
+  Toronto, Ontario M9C 3J5
+  
+  Contact Us (Central Office)
+  P : +1 253-863-8967
+  M : contact@designo.co -->
 </body>
 
 </html>

@@ -17,7 +17,7 @@ p {
   font-weight: 400;
 }
 
-.close{
+.close {
   display: none;
 }
 
@@ -26,7 +26,7 @@ p {
   background: white;
   text-transform: uppercase;
   font-weight: 500;
-  padding: 18px 25px;
+  padding: 18px 0;
   width: 152px;
   text-decoration: none;
   border-radius: 8px;
@@ -39,38 +39,51 @@ body {
   padding: 0;
 }
 .wrapper {
-  padding: 35px 24px;
+  // padding-left: 35px;
+  // padding-right: 35px;
   margin: 0;
   box-sizing: border-box;
   width: 100%;
 }
 
+.container {
+  padding: 0 24px;
+}
+
 header {
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: $white;
   overflow: hidden;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 24px;
+    width: 100%;
+  }
   nav {
     display: flex;
     align-items: center;
     position: fixed;
     left: 0;
-    top:94px;
+    top: 94px;
     height: 235px;
     width: 100%;
     background-color: $black;
     z-index: 2;
     //transform: translateY(-300%);
-    transform: translateX(300%);
-    transition: transform ease-in-out 200ms;
-    ul{
-      margin:0;
+    transform: translateX(200%);
+    transition: transform ease-in-out 550ms;
+    ul {
+      margin: 0;
       padding: 0;
-      padding-left:24px;
+      padding-left: 24px;
       list-style: none;
       display: flex;
       flex-direction: column;
@@ -78,9 +91,9 @@ header {
       height: 150px;
     }
 
-    a{
+    a {
       text-decoration: none;
-      color:$white;
+      color: $white;
       text-transform: uppercase;
       font-size: 24px;
       letter-spacing: 2px;
@@ -89,7 +102,7 @@ header {
   }
 }
 
-.open-nav{
+.open-nav {
   transform: translateX(0%);
 }
 
@@ -103,8 +116,9 @@ header {
   height: 843px;
   overflow: hidden;
   color: white;
+  margin-bottom: 120px;
 
-  .wrapper {
+  .container {
     padding-top: 80px;
   }
 
@@ -113,11 +127,16 @@ header {
     flex-direction: column;
     align-items: center;
     margin-bottom: 24px;
-  }
+    text-align: center;
 
-  h1 {
-    margin-top: 0;
-    margin-bottom: 14px;
+    h1 {
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
+    p {
+      width: 327px;
+    }
   }
 
   img {
@@ -130,7 +149,11 @@ header {
 
 .services {
   color: white;
-  display: grid;
+  margin-bottom: 120px;
+
+  a {
+    text-decoration: none;
+  }
 
   .tile {
     display: flex;
@@ -183,7 +206,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  &.wrapper{
+  margin-bottom: 120px;
+  //padding:0 24px;
+  &.wrapper {
     margin-bottom: 0;
   }
   .card {
@@ -192,8 +217,7 @@ header {
     align-items: center;
     margin-bottom: 80px;
 
-    &:last-child
-    {
+    &:last-child {
       margin-bottom: 0;
     }
 
@@ -251,88 +275,295 @@ footer {
   background: linear-gradient(0deg, $black 80%, #ffffff 20%);
   color: white;
 
-  .wrapper{
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
-  
+
   .contact-banner {
-    background-image: url('/assets/shared/desktop/bg-pattern-call-to-action.svg');
+    background-image: url("/assets/shared/desktop/bg-pattern-call-to-action.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     background-color: $peach;
+    display: flex;
     width: 327px;
-    display:flex;
     height: 379px;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     border-radius: 15px;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
+    padding: 64px 24px;
+    box-sizing: border-box;
+
+    h1 {
+      margin: 0;
+      margin-bottom: 6px;
+    }
+
+    p {
+      margin: 0;
+    }
   }
 
-  .footer-nav
-  {
+  .contact-content {
+    margin-bottom: 32px;
+  }
+
+  .footer-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    .logo{
-     width: 202px;
-     margin-bottom: 32px;
+
+    .logo {
+      width: 202px;
+      margin-bottom: 32px;
     }
 
-    hr{
-      color:rgba($color: $white, $alpha: .3);
+    hr {
+      color: rgba($color: $white, $alpha: 0.3);
       width: 100%;
     }
 
-    .nav-links{
-      ul{
+    .nav-links {
+      ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         list-style-type: none;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
 
-        li{
+        li {
           padding: 25px;
         }
-        a{
+        a {
           text-transform: uppercase;
           font-size: 14px;
           line-height: 14px;
           letter-spacing: 2px;
           text-decoration: none;
-          color:white;
+          color: white;
         }
       }
-    } 
+    }
   }
 }
 
-.address, .contact-us{
-  margin-bottom:40px;
+.address,
+.contact-us {
+  margin-bottom: 40px;
   text-align: center;
-  color:$light-grey;
-  h1{
+  color: $light-grey;
+  h1 {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 0;
   }
 
-  p{
+  p {
     font-size: 16px;
-    margin:0;
+    margin: 0;
   }
 }
 
-.social-links{
-  display:flex;
+.social-links {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width:184px;
+  width: 184px;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    padding: 0 40px;
+  }
+
+  header {
+    .menu {
+      display: none;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 35px 24px;
+      width: 100%;
+    }
+    nav {
+      align-items: center;
+      justify-content: center;
+      position: unset;
+      height: auto;
+      width: auto;
+      background-color: white;
+      z-index: 2;
+      transform: translateX(0%);
+      transition: transform ease-in-out 550ms;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+      }
+
+      li {
+        margin-right: 42px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: $black;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 2px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .hero {
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+
+    .container {
+      padding: 60px;
+    }
+  }
+
+  .services {
+    &.container {
+      padding: 0;
+    }
+
+    .tile {
+      height: 200px;
+    }
+
+    .img-web-design {
+      background: url("/assets/home/tablet/image-web-design.jpg") no-repeat;
+      background-size: cover;
+      background-position: bottom;
+    }
+
+    .img-app-design {
+      background: url("/assets/home/tablet/image-app-design.jpg") no-repeat;
+      background-size: cover;
+    }
+
+    .img-graphic-design {
+      background: url("/assets/home/tablet/image-graphic-design.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .about-us {
+    &.container {
+      padding: 0;
+    }
+    .card {
+      flex-direction: row;
+
+      img {
+        margin: 0;
+        margin-right: 48px;
+      }
+
+      .card-content {
+        text-align: left;
+        font-size: 16px;
+      }
+    }
+
+    .card-details {
+      text-align: left;
+    }
+  }
+
+  footer {
+
+    .container
+    {
+      padding-bottom: 80px;
+    }
+    .contact-banner {
+      width: 100%;
+
+      h1 {
+        margin: 0;
+        margin-bottom: 26px;
+        padding: 0 140px;
+        font-size: 40px;
+      }
+
+      p {
+        margin: 0;
+        padding: 0 100px;
+        font-size: 16px;
+      }
+    }
+
+    .footer-nav {
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+      border-bottom: 1px solid rgba($color: $white, $alpha: 0.3);
+      margin-bottom: 31px;
+      hr {
+        display: none;
+      }
+      .logo {
+        margin-bottom: 0;
+      }
+
+      .nav-links {
+        ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        }
+
+        li {
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    .company-info {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .address,
+      .contact-us {
+        margin-bottom: 0;
+
+        h1{
+          margin-top: 0;
+        }
+      }
+
+      .social-links {
+        align-self: flex-end;
+      }
+    }
+  }
 }
