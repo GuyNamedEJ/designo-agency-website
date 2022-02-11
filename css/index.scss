@@ -437,10 +437,21 @@ footer {
   .hero {
     border-radius: 15px;
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: left 150px center;
 
     .container {
       padding: 60px;
+    }
+
+    .hero-content{
+      h1{
+        font-size: 48px;
+        line-height: 48px;
+      }
+
+      p{
+        width:445px;
+      }
     }
   }
 

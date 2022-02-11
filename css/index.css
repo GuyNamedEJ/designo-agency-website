@@ -545,10 +545,17 @@ footer .footer-nav .nav-links ul a {
   .hero {
     border-radius: 15px;
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: left 150px center;
   }
   .hero .container {
     padding: 60px;
+  }
+  .hero .hero-content h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .hero .hero-content p {
+    width: 445px;
   }
   .services.container {
     padding: 0;
